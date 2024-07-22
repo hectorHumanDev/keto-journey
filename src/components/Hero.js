@@ -1,20 +1,25 @@
 import "./componentStyles/Hero.css";
+import ImageContainer from "../components/ImageContainer";
+import "./componentStyles/ImageContainer.css";
 
-const Hero = () => {
+export const Input = () => {
   return (
-    <section className="hero-container lato-bold">
-      <div className="hero-content">
-        <h1>Your Journey Starts Here</h1>
-        <p>
-          Explore the options in the top right, or search for a recipe below
-        </p>
-        <br />
-        <div className="input-container" style={{ display: "flex" }}>
-          <input type="text" />
-          <button>Find</button>
-        </div>
+    <div>
+      <input type="text" />
+      <button>Find</button>
+    </div>
+  );
+};
+const Hero = ({ message, subMessage, showInput, className }) => {
+  return (
+    <main className={`${className} lato-bold`}>
+      <div className="left-hero-section">
+        <h1>{message}</h1>
+        <p>{subMessage}</p>
+        {showInput && <Input />}
       </div>
-    </section>
+      <ImageContainer />
+    </main>
   );
 };
 

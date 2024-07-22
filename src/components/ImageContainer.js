@@ -61,16 +61,10 @@ const ImageContainer = () => {
       heroImages[Math.floor(Math.random() * heroImages.length)];
     setHeroImage(randomImage);
   }, []);
-
   return (
-    <section className="container">
+    <section className="imageContainer">
       <div>
-        <img
-          src={heroImage.uri}
-          alt={heroImage.alt}
-          width="120%"
-          height="120%"
-        />
+        <img src={heroImage.uri} alt={heroImage.alt} />
       </div>
     </section>
   );

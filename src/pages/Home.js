@@ -1,16 +1,21 @@
 import Header from "../components/Header";
 import "../App.css";
+import "../components/componentStyles/Hero.css";
 import Hero from "../components/Hero";
-import ImageContainer from "../components/ImageContainer";
 
-function Home() {
+function Home({ input }) {
+  const message = "Your Journey Starts Here";
+  const subMessage =
+    "Explore the options in the top right, or search for a recipe below";
   return (
     <div>
       <Header />
-      <main className="hero-main">
-        <Hero />
-        <ImageContainer />
-      </main>
+      <Hero
+        message={message}
+        subMessage={subMessage}
+        showInput={true}
+        className="hero-main"
+      />
     </div>
   );
 }

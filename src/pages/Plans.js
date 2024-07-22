@@ -1,15 +1,26 @@
 // import { client } from "../lib/contentful";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
+
+const pageName = <h1>Meal plans</h1>;
+const subTitle = (
+  <p>
+    Discover a variety of recipes that you can try out. From appetizers to
+    desserts, we have something for everyone.
+  </p>
+);
+
 const Plans = () => {
   return (
-    <div>
+    <>
       <Header />
-      <h1>Meal plans</h1>
-      <p>
-        Discover a variety of recipes that you can try out. From appetizers to
-        desserts, we have something for everyone.
-      </p>
-    </div>
+      <Hero
+        message={pageName}
+        subMessage={subTitle}
+        showInput={false}
+        className="hero2-main"
+      />
+    </>
   );
 };
 

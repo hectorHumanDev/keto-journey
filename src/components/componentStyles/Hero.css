@@ -1,7 +1,15 @@
-.hero-container {
+/* .hero-container {
   display: flex;
   height: 80vh;
   width: 80vh;
+  max-width: 580px;
+} */
+
+.hero-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 100px;
 }
 
 .hero-content {
@@ -10,6 +18,14 @@
   margin-left: 90px;
   margin-bottom: 90px;
 }
+
+/* .hero-content p {
+  white-space: wrap;
+  max-width: 500px;
+  width: 400px;
+  margin: 80px;
+  align-content: flex-start;
+} */
 
 .input-container {
   align-items: center;

@@ -1,10 +1,10 @@
 // import { client } from "../lib/contentful";
 import Header from "../components/Header";
-const Recipes = () => {
+const Plans = () => {
   return (
     <div>
       <Header />
-      <h1>Recipes</h1>
+      <h1>Meal plans</h1>
       <p>
         Discover a variety of recipes that you can try out. From appetizers to
         desserts, we have something for everyone.
@@ -13,4 +13,4 @@ const Recipes = () => {
   );
 };
 
-export default Recipes;
+export default Plans;

@@ -18,7 +18,7 @@ const Hero = ({ message, subMessage, showInput, className }) => {
         <p>{subMessage}</p>
         {showInput && <Input />}
       </div>
-      <ImageContainer />
+      <ImageContainer showInput={showInput} />
     </main>
   );
 };

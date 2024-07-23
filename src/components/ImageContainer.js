@@ -53,7 +53,7 @@ const heroImages = [
   },
 ];
 
-const ImageContainer = () => {
+const ImageContainer = ({ showInput, width, height }) => {
   const [heroImage, setHeroImage] = useState({ uri: "", alt: "" });
 
   useEffect(() => {
@@ -62,10 +62,13 @@ const ImageContainer = () => {
     setHeroImage(randomImage);
   }, []);
   return (
-    <section className="imageContainer">
-      <div>
-        <img src={heroImage.uri} alt={heroImage.alt} />
-      </div>
+    <section className={showInput ? "imageContainer" : "container2"}>
+      <img
+        src={heroImage.uri}
+        alt={heroImage.alt}
+        width={width}
+        height={height}
+      />
     </section>
   );
 };

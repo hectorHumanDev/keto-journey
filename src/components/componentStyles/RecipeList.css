@@ -11,10 +11,11 @@
   flex-direction: column;
   margin: 20px;
   align-content: center;
+  width: 400px;
 }
 
 .recipe-card img {
-  width: 300px;
+  width: 400px;
   height: 280px;
 }
 

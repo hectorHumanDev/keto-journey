@@ -2,7 +2,6 @@
 import Header from "../components/Header";
 import RecipeList from "../components/RecipeList";
 import Hero2 from "../components/Hero2";
-import { client } from "../lib/contentful";
 
 const pageName = <h1>Recipes</h1>;
 const subTitle = (
@@ -21,18 +20,3 @@ export default function Recipes() {
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  const response = await client
-    .getEntries({ content_type: "recipe" })
-    .then((data) => {
-      return data.json();
-    });
-
-  return {
-    props: {
-      recipes: response.items,
-      revalidate: 70,
-    },
-  };
-};

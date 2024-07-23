@@ -1,17 +1,31 @@
 import { heroImages } from "./ImageContainer";
+import { client, fetchRecipes } from "../lib/contentful";
 import RecipeCard from "./RecipeCard";
 import "../components/componentStyles/RecipeList.css";
+import { useEffect, useState } from "react";
 
-function RecipeList() {
+export default function RecipeList() {
+  const [recipes, setRecipes] = useState([]);
+  useEffect(() => {
+    const loadRecipes = async () => {
+      const recipesData = await fetchRecipes();
+      setRecipes(recipesData);
+    };
+    loadRecipes();
+  }, []);
+
   return (
     <div className="recipe-cards-container">
-      {heroImages.map((recipe, index) => {
+      {recipes.map((recipe, index) => {
+        const thumbnailUrl = recipe.fields.thumbnail.fields.file.url;
         return (
-          <RecipeCard img={recipe.uri} description={recipe.alt} key={index} />
+          <RecipeCard
+            img={thumbnailUrl}
+            description={recipe.fields.nameOfDish}
+            key={index}
+          />
         );
       })}
     </div>
   );
 }
-
-export default RecipeList;

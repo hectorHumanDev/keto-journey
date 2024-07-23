@@ -5,11 +5,13 @@ const Header = () => {
   return (
     <header className="app-header">
       <div>
-        <Link to="/">logo</Link>
+        <Link className="logo lobster-regular" to="/">
+          Keto Journey
+        </Link>
       </div>
       <div>
         <nav>
-          <ul className="nav-links">
+          <ul className="nav-links lobster-regular">
             <li>
               <Link to="/about">About</Link>
             </li>

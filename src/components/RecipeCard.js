@@ -1,13 +1,13 @@
 import { Card, CardImg, CardBody } from "reactstrap";
-import foodCounter from "../assets/food-counter.jpg";
+import "../components/componentStyles/RecipeList.css";
+// import foodCounter from "../assets/food-counter.jpg";
 
-const RecipeCard = () => {
+const RecipeCard = ({ img, description }) => {
   return (
-    <Card>
-      <CardImg src={foodCounter} height="250px" width="200px" />
-      <CardBody>
-        <p>Recipe description here</p>
-      </CardBody>
+    <Card className="recipe-card">
+      <CardImg src={img} height="250px" width="200px" />
+
+      <p className="recipe-description">{description}</p>
     </Card>
   );
 };

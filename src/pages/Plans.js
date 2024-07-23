@@ -1,6 +1,6 @@
 // import { client } from "../lib/contentful";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Hero2 from "../components/Hero2";
 
 const pageName = <h1>Meal plans</h1>;
 const subTitle = (
@@ -14,12 +14,7 @@ const Plans = () => {
   return (
     <>
       <Header />
-      <Hero
-        message={pageName}
-        subMessage={subTitle}
-        showInput={false}
-        className="hero2-main"
-      />
+      <Hero2 message={pageName} subMessage={subTitle} showInput={true} />
     </>
   );
 };

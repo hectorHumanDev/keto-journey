@@ -12,7 +12,7 @@ import benedictWaffle from "../assets/benedict-waffles.jpg";
 import cheeseBoard from "../assets/cheese-board.jpg";
 import { useEffect, useState } from "react";
 
-const heroImages = [
+export const heroImages = [
   { uri: foodCounter, alt: "assortment of fresh foods on marble counter" },
   { uri: avocadoOil, alt: "avocado split in half on marble counter" },
   {

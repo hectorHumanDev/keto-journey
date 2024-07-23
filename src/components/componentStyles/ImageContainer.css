@@ -10,4 +10,6 @@ img {
 .container2 {
   height: 280px;
   width: 800px;
+  margin-right: 90px;
+  flex: 3;
 }

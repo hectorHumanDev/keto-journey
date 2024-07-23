@@ -1,7 +1,8 @@
 // import { client } from "../lib/contentful";
 import Header from "../components/Header";
-// import RecipeCard from "../components/RecipeCard";
+import RecipeList from "../components/RecipeList";
 import Hero2 from "../components/Hero2";
+import { client } from "../lib/contentful";
 
 const pageName = <h1>Recipes</h1>;
 const subTitle = (
@@ -11,13 +12,27 @@ const subTitle = (
   </p>
 );
 
-const Recipes = () => {
+export default function Recipes() {
   return (
     <>
       <Header />
       <Hero2 message={pageName} subMessage={subTitle} showInput={true} />
+      <RecipeList />
     </>
   );
-};
+}
 
-export default Recipes;
+export const getStaticProps = async () => {
+  const response = await client
+    .getEntries({ content_type: "recipe" })
+    .then((data) => {
+      return data.json();
+    });
+
+  return {
+    props: {
+      recipes: response.items,
+      revalidate: 70,
+    },
+  };
+};

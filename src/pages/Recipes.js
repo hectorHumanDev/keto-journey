@@ -16,6 +16,7 @@ export default function Recipes() {
     <>
       <Header />
       <Hero2 message={pageName} subMessage={subTitle} showInput={true} />
+      <br />
       <RecipeList />
     </>
   );

@@ -3,7 +3,8 @@
   margin: 40px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  padding-top: 200px;
 }
 
 .recipe-card {

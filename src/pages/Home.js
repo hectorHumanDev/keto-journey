@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import "../App.css";
-import "../components/componentStyles/Hero.css";
+import "../components/componentStyles/Hero2.css";
 
-import Hero from "../components/Hero";
+import Hero2 from "../components/Hero2";
 
 export default function Home({ recipes }) {
   const message = "Your Journey Starts Here";
@@ -11,11 +11,11 @@ export default function Home({ recipes }) {
   return (
     <div>
       <Header />
-      <Hero
+      <Hero2
         message={message}
         subMessage={subMessage}
         showInput={true}
-        className="hero-main"
+        className="hero2-main"
       />
     </div>
   );

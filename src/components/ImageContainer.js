@@ -10,6 +10,7 @@ import sweetPotato from "../assets/sweet-potato.jpg";
 import fruitTopped from "../assets/fruit-topped.jpg";
 import benedictWaffle from "../assets/benedict-waffles.jpg";
 import cheeseBoard from "../assets/cheese-board.jpg";
+
 import { useEffect, useState } from "react";
 
 export const heroImages = [
@@ -62,7 +63,7 @@ const ImageContainer = ({ showInput, width, height }) => {
     setHeroImage(randomImage);
   }, []);
   return (
-    <section className={showInput ? "imageContainer" : "container2"}>
+    <section className={showInput ? "imageContainer" : "container3"}>
       <img
         src={heroImage.uri}
         alt={heroImage.alt}

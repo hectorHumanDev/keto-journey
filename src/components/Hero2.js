@@ -1,5 +1,6 @@
 import "./componentStyles/Hero2.css";
 import ImageContainer from "./ImageContainer";
+import fruitCounterLong from "../assets/fruit-counter-long.jpg";
 import { Input } from "./Hero";
 
 const Hero2 = ({ message, subMessage, showInput }) => {
@@ -10,7 +11,14 @@ const Hero2 = ({ message, subMessage, showInput }) => {
         <p>{subMessage}</p>
         {showInput && <Input />}
       </div>
-      <ImageContainer showInput={showInput} width={640} height={250} />
+      <img
+        className="hero2-img"
+        src={fruitCounterLong}
+        alt="fresh fruit on white counter"
+        width={1800}
+        height={500}
+      />
+      {/* <ImageContainer showInput={showInput} width={640} height={250} /> */}
     </main>
   );
 };

@@ -13,3 +13,8 @@ img {
   margin-right: 90px;
   flex: 3;
 }
+
+.container3 {
+  height: 280px;
+  width: 800px;
+}

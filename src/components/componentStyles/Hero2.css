@@ -1,11 +1,13 @@
 .hero2-main {
+  /* position: relative; */
   height: 40vh;
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .left-hero-section {
+  position: absolute;
   align-content: center;
   /* font-size: 25px; */
   margin-left: 90px;
@@ -14,6 +16,11 @@
   flex-direction: column;
   /* width: 1500px; */
   flex: 3;
+}
+
+.hero2-img {
+  object-fit: cover;
+  border-radius: 0;
 }
 
 .input-container {
@@ -26,7 +33,7 @@ input {
   width: 400px;
   height: 40px;
   border-radius: 20px 20px 20px 0px;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding-left: 10px;
   text-align: center;
 }
@@ -37,5 +44,6 @@ button {
   width: 105px;
   border-radius: 20px 20px 0;
   background-color: orange;
-  font-size: 20px;
+  font-size: 1em;
+  font-weight: bold;
 }

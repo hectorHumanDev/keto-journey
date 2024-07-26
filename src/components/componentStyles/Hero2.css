@@ -27,7 +27,7 @@
 .hero2-img {
   object-fit: cover;
   border-radius: 0;
-  /* filter: grayscale(20%); */
+  /* filter: grayscale(50%); */
 }
 
 .input-container {

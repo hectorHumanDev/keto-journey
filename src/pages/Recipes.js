@@ -22,6 +22,7 @@ export default function Recipes() {
     };
     loadRecipes();
   }, []);
+
   return (
     <>
       <Header />

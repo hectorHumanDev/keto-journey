@@ -6,21 +6,28 @@
   font-size: 1rem;
 }
 
-.left-hero-section {
+.hero-div {
   position: absolute;
-  align-content: center;
-  /* font-size: 25px; */
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.5); */
   margin-left: 90px;
   margin-bottom: 90px;
   flex-wrap: wrap;
   flex-direction: column;
-  /* width: 1500px; */
+  justify-content: center;
+  font-style: italic;
+  text-shadow: 2px 0px 0 rgba(77, 75, 75, 0.5);
   flex: 3;
+}
+
+.hero-div > p {
+  font-size: 1.5em;
 }
 
 .hero2-img {
   object-fit: cover;
   border-radius: 0;
+  /* filter: grayscale(20%); */
 }
 
 .input-container {
@@ -32,7 +39,7 @@
 input {
   width: 400px;
   height: 40px;
-  border-radius: 20px 20px 20px 0px;
+  border-radius: 20px;
   font-size: 1.5rem;
   padding-left: 10px;
   text-align: center;
@@ -42,7 +49,7 @@ button {
   margin: 10 10px;
   height: 60px;
   width: 105px;
-  border-radius: 20px 20px 0;
+  border-radius: 20px;
   background-color: orange;
   font-size: 1em;
   font-weight: bold;

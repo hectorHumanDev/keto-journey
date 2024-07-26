@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  background-image: url(../src/assets/background.jpg);
+  /* background-image: url(../src/assets/background.jpg); */
+  background-color: #f2f8f6;
 }
 
 /* ==================================================================font classes=======================================*/

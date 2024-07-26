@@ -2,6 +2,8 @@
 import Header from "../components/Header";
 import RecipeList from "../components/RecipeList";
 import Hero2 from "../components/Hero2";
+import { client, fetchRecipes } from "../lib/contentful";
+import { useEffect, useState } from "react";
 
 const pageName = <h1>Recipes</h1>;
 const subTitle = (
@@ -12,12 +14,20 @@ const subTitle = (
 );
 
 export default function Recipes() {
+  const [recipes, setRecipes] = useState([]);
+  useEffect(() => {
+    const loadRecipes = async () => {
+      const recipesData = await fetchRecipes();
+      setRecipes(recipesData);
+    };
+    loadRecipes();
+  }, []);
   return (
     <>
       <Header />
       <Hero2 message={pageName} subMessage={subTitle} showInput={true} />
       <br />
-      <RecipeList />
+      <RecipeList content={recipes} />
     </>
   );
 }

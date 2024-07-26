@@ -37,7 +37,7 @@
 input {
   width: 400px;
   height: 40px;
-  border-radius: 20px 20px 20px 0px;
+  border-radius: 30px;
   font-size: 24px;
   padding-left: 10px;
   text-align: center;
@@ -47,7 +47,7 @@ button {
   margin: 10 10px;
   height: 60px;
   width: 105px;
-  border-radius: 20px 20px 0;
+  border-radius: 30px;
   background-color: orange;
   font-size: 20px;
 }

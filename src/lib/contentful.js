@@ -8,9 +8,12 @@ const client = contentful.createClient({
 export const fetchRecipes = async () => {
   try {
     const response = await client.getEntries({ content_type: "recipe" });
+    console.log(response);
     return response.items;
   } catch (error) {
     console.error("Error fetching data from Contentful:", error);
     return [];
   }
 };
+
+// export const

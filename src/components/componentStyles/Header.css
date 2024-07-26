@@ -4,19 +4,19 @@
   font-size: 20px;
 }
 
-.lobster-regular {
+/* .lobster-regular {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 .app-header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0px 20px;
-  font-size: 18px;
-  /* border: 1px solid black; */
+  font-size: 1rem;
+  text-shadow: 1px 0px 0 rgba(77, 75, 75, 0.5);
 }
 
 .logo {

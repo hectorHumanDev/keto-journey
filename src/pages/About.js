@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+import Hero2 from "../components/Hero2";
 
 const pageName = <h1>About Us</h1>;
 const subTitle = (
@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <Hero
+      <Hero2
         message={pageName}
         subMessage={subTitle}
         showInput={false}

@@ -1,6 +1,6 @@
 import Header from "../components/Header";
-import Hero from "../components/Hero";
-import "../components/componentStyles/Hero.css";
+import Hero2 from "../components/Hero2";
+// import "../components/componentStyles/Hero.css";
 
 const pageName = <h1>Our Journey</h1>;
 const subTitle = (
@@ -18,7 +18,7 @@ const Journey = () => {
   return (
     <>
       <Header />
-      <Hero
+      <Hero2
         message={pageName}
         subMessage={subTitle}
         showInput={false}
